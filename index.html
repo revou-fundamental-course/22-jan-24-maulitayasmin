@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-Grocey</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <nav class="navigation-grocery">
+        <img src="assets/grocery-logo.png" alt="Logo" class="logo">
+        <ul class="navigation-items">
+            <li>Home</li>
+            <li>Our Product</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+    <hr>
+    <header>
+        <h1>Fresh and Healthy Veggies Organic Market</h1>
+        <h4>Organic food is food produced  by methods that comply with the standard of farming</h4>
+    </header>
+    <div class="row">
+      <div class="content">
+        <img src="assets/online-grocery.jpg" alt="Header Img">
+      </div>
+
+      <div class="form-box">
+        <h2>Contact Us</h2>
+        <p>Sales akan menghubungi Anda 1x24 jam setelah data kami terima</p>
+        <form action="form_handler.php" method="post">
+          <label for="name">Your Name :</label>
+          <input type="text" id="name" name="name" class="form" placeholder="Enter your first and last name" required><br>
+      
+          <label for="email">Email Address :</label>
+          <input type="email" id="email" name="email" class="form" placeholder="example@gmail.com" required><br>
+      
+          <label for="interest">What are you interested in?</label>
+          <select id="interest" name="interest" class="form">
+            <option value="product">Product</option>
+            <option value="service">Service</option>
+            <option value="other">Other</option>
+          </select><br><br>
+      
+          <input type="submit" value="Send">
+      </form>
+      </div>
+    </div>
 </body>
 </html>
